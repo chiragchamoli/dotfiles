@@ -1,11 +1,9 @@
 #!/bin/bash
 
-declare -r GITHUB_REPOSITORY='alrra/dotfiles'
-
+declare -r GITHUB_REPOSITORY='chiragchamoli/dotfiles'
 declare -r DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
 declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/os/utils.sh"
-
 declare dotfilesDirectory="$HOME/projects/dotfiles"
 
 # ----------------------------------------------------------------------
@@ -161,7 +159,6 @@ verify_os() {
     declare -r MINIMUM_OS_X_VERSION='10.10'
     declare -r MINIMUM_UBUNTU_VERSION='14.04'
     declare -r OS_NAME="$(uname -s)"
-
     declare OS_VERSION=''
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

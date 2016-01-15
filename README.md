@@ -1,8 +1,6 @@
-# [Cătălin](https://github.com/alrra)’s dotfiles
+# [Chirag Chamoli's](https://github.com/chiragchamoli)’s dotfiles
 
-These are the base dotfiles that I start with when I set up a
-new environment. For more specific local needs I use the `.local`
-files described in the [`Local Settings`](#local-settings) section.
+These are the base dotfiles.
 
 
 ## Setup
