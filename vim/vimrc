@@ -271,16 +271,8 @@ set background=dark            " Use colors that look good
 
 " Set custom configurations for when the
 " Solarized theme is used from vim's Terminal mode
-" http://ethanschoonover.com/solarized/vim-colors-solarized#advanced-configuration
 
-if !has('gui_running')
-    let g:solarized_contrast = 'high'
-    let g:solarized_termcolors = 256
-    let g:solarized_termtrans = 1
-    let g:solarized_visibility = 'high'
-endif
-
-colorscheme solarized          " Use custom color scheme
+" colorscheme solarized          " Use custom color scheme
 
 
 " ----------------------------------------------------------------------
