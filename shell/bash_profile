@@ -1,32 +1,12 @@
 #!/bin/bash
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-source_bash_files() {
-
-    local file=''
-    local i=''
-
-    declare -r -a FILES_TO_SOURCE=(
-        'bash_aliases'
-        'bash_autocomplete'
-        'bash_exports'
-        'bash_functions'
-        'bash_options'
-        'bash_prompt'
-        'bash.local'  # for local settings that should
-                      # not be under version control
-    )
-
-    for i in ${!FILES_TO_SOURCE[*]}; do
-        file="$HOME/.${FILES_TO_SOURCE[$i]}"
-        [ -r "$file" ] && source "$file"
-    done
-
-}
-
-source_bash_files
-unset -f source_bash_files
+source /home/vagrant/.bash_aliases
+source /home/vagrant/.bash_autocomplete
+source /home/vagrant/.bash_exports
+source /home/vagrant/.bash_functions
+source /home/vagrant/.bash_options
+source /home/vagrant/.bash_prompt
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
